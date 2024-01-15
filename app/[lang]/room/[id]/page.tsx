@@ -115,8 +115,7 @@ export default function RoomId() {
             players: arrayRemove({
                 id: user.uid,
                 name: user.displayName,
-                isOwner: user.uid === currentRoom?.createdBy,
-                // isOwner: true,
+                isOwner
             }),
         });
         router.push(`/${lang}`);
